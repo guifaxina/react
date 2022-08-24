@@ -1,8 +1,8 @@
 import "./App.css";
-import AppleWithCaramel from "./components/AppleWithCaramel";
+import Foo from "./components/Foo";
 
 function App() {
-  return <AppleWithCaramel name="Samara" />;
+  return <Foo name="Samara" />;
 }
 
 export default App;
