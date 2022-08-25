@@ -1,8 +1,9 @@
-import "./App.css";
-import Foo from "./components/Foo";
+import Head from "./components/Head";
 
-function App() {
-  return <Foo name="Samara" />;
+function App(){
+  return (
+    <Head name='Samara'></Head>
+  );
 }
 
-export default App;
+export default App

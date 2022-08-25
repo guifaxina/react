@@ -5,14 +5,14 @@ type Props = {
 }
 
 
-function Foo(props: Props) {
+function Header(props: Props) {
   return (
     <header className="header">
       <h1>{props.name}</h1>
-      <Menu link={["Foo", "Ba", "Foo ba", "Login"]}/>
+      <Menu link={["Contact", "About", "Our plans", "Login"]}/>
     </header>
   );
 };
 
 
-export default Foo
+export default Header
