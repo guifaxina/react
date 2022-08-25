@@ -1,7 +1,22 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
-export default function Counter() {
-    const [count, setCount] = useState(0)
+type Props = {
+    count: number
+}
+
+export default function Counter(props: Props) {
+
+    const [count, setCount] = useState(props.count)
+    
+    useEffect(() => {
+        setCount(Number(localStorage.getItem("count")))
+    }, [])
+
+    useEffect(() => {
+        document.title = `Times clicked: ${count}`;
+        localStorage.setItem("count", `${count}`);
+        
+    }, [count])
     
     return (
     <div>
